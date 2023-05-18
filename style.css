@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: 1.5rem;
+  --head: calc(1rem + 5vw);
+  --bg-color: #f6b93b;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(rgb(0, 20, 20) 0.5%, transparent),
+    url(https://media.istockphoto.com/id/1359499287/photo/vegan-food-served-as-vegan-beet-burgers.jpg?b=1&s=170667a&w=0&k=20&c=64DPb9OqVmv5fnnO-bHXO1OyYJHbmvHPtPSPgyI9c_g=);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin: 0rem 1.5rem;
+  color: white;
+  margin: 0rem 2rem;
+}
+
+.navbar h2 {
+  color: #ffd582;
+  text-shadow: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-left: 3rem;
+  font-size: var(--text);
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #ffd582;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.main {
+  color: white;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main a {
+  color: white;
+  text-decoration: none;
+  background-color: var(--bg-color);
+  font-weight: 900;
+  padding: 0.8rem 1rem;
+  font-size: var(--text);
+  margin-top: 1.5rem;
+  border-radius: 2vh;
+}
+
+.main a:hover {
+  background-color: #ffd582;
+  color: rgb(255, 244, 244);
+}
+
+.main h2 {
+  font-size: var(--head);
+}
+
+.main p {
+  font-size: var(--text);
+}
